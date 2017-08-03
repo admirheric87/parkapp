@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ParkApp</string>
+    <string name="click_on_map">Click on the map to check parking rules</string>
+    <string name="from_to">" (from %1$s to %2$s)"</string>
+</resources>

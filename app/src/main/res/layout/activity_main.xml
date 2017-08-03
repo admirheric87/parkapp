@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.admirheric.parkapp.MainActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </fragment>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/default_padding"
+        android:src="@android:drawable/ic_dialog_map"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llNowLaterButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/llInfo"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvNow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Now"
+                android:padding="@dimen/default_padding"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/tvLater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Later"
+                android:padding="@dimen/default_padding"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llInfo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_box_height"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/click_on_map"
+                android:gravity="center"/>
+
+            <ScrollView
+                android:id="@+id/svInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/click_on_map"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/llInfoContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <ProgressBar
+                android:id="@+id/pbInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:padding="@dimen/progress_padding"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

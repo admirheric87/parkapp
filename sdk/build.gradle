@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('ParkbobSDK_Android_2.0.1B37.aar'))
