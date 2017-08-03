@@ -1,0 +1,4 @@
+<resources>
+    <string name="parkbob_key" templateMergeStrategy="preserve" translatable="false">661f577aa57a6bd62bf91f8351b02ed4</string>
+    <string name="parkbob_source" templateMergeStrategy="preserve" translatable="false">APPLICANT_TEST_HERIC</string>
+</resources>
