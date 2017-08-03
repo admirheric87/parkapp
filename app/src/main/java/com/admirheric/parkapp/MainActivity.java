@@ -214,7 +214,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         String desc = rule.getRuleName();
         if(rule.getStartTime()!=null && rule.getEndTime()!=null){
             desc = desc + String.format(getString(R.string.from_to),Utils.getHoursMinutes(rule.getStartTime()),Utils.getHoursMinutes(rule.getEndTime()));
-            //desc = desc + " (from " + Utils.getHoursMinutes(rule.getStartTime()) + " to " + Utils.getHoursMinutes(rule.getEndTime()) + ")";
         }
 
         TextView description = (TextView) v.findViewById(R.id.tvDescription);
